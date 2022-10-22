@@ -53,6 +53,7 @@
         padding: 0 25px;
         display: flex;
         justify-content: space-between;
+        z-index: 1000;
       }
       .fa-circle-arrow-left,.fa-circle-arrow-right,.fa-maximize{
         color: #fff;
@@ -68,6 +69,7 @@
 
       #canvas{
         position: relative;
+        margin-top: 4rem;
       }
       h1{
         color: white;
@@ -81,16 +83,30 @@
         /* text-transform: uppercase; */
       }
 
+      .contact{
+        width: 85%;
+        font-weight: 400;
+        margin: 0 auto;
+        margin-top: 6rem;
+      }
+      .contact h3{
+        font-weight: 400;
+      }
+
 
       @media only screen and (max-width: 450px) {
+
+        #canvas{
+          margin-top: -12rem;
+          height: 750px;
+          overflow-y: hidden;
+        }
        
        .contact{
-        margin-top: -6rem;
+       
         margin-bottom: 50px;
        }
-       h1{
-        display: block;
-       }
+      
      }
 
 
@@ -109,19 +125,22 @@
         <i class="fa-solid fa-circle-arrow-right"></i>
       </div>
     </div>
-    <div id="canvas">
-      <h1>skills</h1>
-    </div>
+
+
     <div class="contact">
       <h2>About</h2>
       <h3>
-        Ambitious student with skills in Full Stack Web Development (Mern
-        Stack). currenty purshing B.tech IT 
+        Ambitious student with skills in Full Stack Web Development. currenty purshing B.tech IT 
       </h3>
       <a href="https://www.linkedin.com/in/arun-mani-644644211/"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://github.com/arunmani12"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.instagram.com/arunmani12/"><i class="fa-brands fa-instagram"></i></a>
     </div>
+
+    <div id="canvas">
+
+    </div>
+    
     <!-- <div id="canvas-2"></div> -->
   </body>
 </html>
